@@ -1,9 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE html />
 <html>
 <head>
 	<title>Hello Coursera!</title>
+	<style>
+	h1 {
+		font-family: verdana;
+		font-size: 48px;
+		color: red;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	p.caption {
+		font-size: 12px;
+		color: rgb(102,102,102);
+	}
+	
+	span.button {
+		display: inline-block;
+		width: 100px;
+		margin-bottom: 2px;
+		margin-top: 2px;
+		background-color: gray;
+		border-style: outset;
+		text-align: center;
+	}
+
+	span.button:active {
+		border-style: inset;
+	}
+
+	span.button > a:link, span.button > a:visited {
+		text-decoration: none;
+		color: black;
+	}
+
+	span.seperator {
+		display: inline-block;
+		width: 10px;
+	}
+	</style>
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<h1>Hello World, I am ready for your challenge.</h1>
+	<img src="https://picsum.photos/200/300" width="200" height="300" alt="Random placeholder image" />
+	<br />
+	<div>
+		Page 1/3
+		<span class="seperator"></span>
+		<span class="button">
+			<a href="site/index.html">Next</a>
+		</span>
+	</div>
 </body>
 </html>
