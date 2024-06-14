@@ -1,58 +1,171 @@
-<!DOCTYPE html />
+<!DOCTYPE html>
+<!--RESTAURANT-->
 <html>
 <head>
-	<title>Hello Coursera!</title>
-	<style>
-	h1 {
-		font-family: verdana;
-		font-size: 48px;
-		color: red;
-	}
-
-	p {
-		font-size: 20px;
-	}
-
-	p.caption {
-		font-size: 12px;
-		color: rgb(102,102,102);
-	}
-	
-	span.button {
-		display: inline-block;
-		width: 100px;
-		margin-bottom: 2px;
-		margin-top: 2px;
-		background-color: gray;
-		border-style: outset;
-		text-align: center;
-	}
-
-	span.button:active {
-		border-style: inset;
-	}
-
-	span.button > a:link, span.button > a:visited {
-		text-decoration: none;
-		color: black;
-	}
-
-	span.seperator {
-		display: inline-block;
-		width: 10px;
-	}
-	</style>
+	<title>Al-Mir Catering</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Limelight">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vast+Shadow">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Hello World, I am ready for your challenge.</h1>
-	<img src="https://picsum.photos/200/300" width="200" height="300" alt="Random placeholder image" />
-	<br />
-	<div>
-		Page 1/3
-		<span class="seperator"></span>
-		<span class="button">
-			<a href="site/index.html">Next</a>
-		</span>
+	<h1 id="top">Al-Mir Catering</h1>
+	<h3 id="tagline">Serving our famous Haleem and Pakistani Cuisine</h3>
+
+	<div id="navigation">
+		<a href="#beef" class="button">Beef/Veal</a>
+		<a href="#chicken" class="button">Chicken</a>
+		<a href="#garnishes" class="button">Garnishes</a>
+		<a href="#desserts" class="button">Desserts</a>
+	</div>
+<!--IMAGES-->
+	<br>
+	<div class="food-pic-container col-lg-4 col-md-4 col-sm-4" style="background-color: brown; border: brown solid 10px;">
+		<div class="food-pic" style="background-image: url(images/haleem.jpg);"></div>
+	</div>
+	<div class="food-pic-container col-lg-4 col-md-4 col-sm-4" style="background-color: olive; border: olive solid 10px;">
+		<div class="food-pic" style="background-image: url(images/biryani.png);"></div>
+	</div>
+	<div class="food-pic-container col-lg-4 col-md-4 col-sm-4" style="background-color: cadetblue; border: cadetblue solid 10px;">
+		<div class="food-pic" style="background-image: url(images/mango-delight.jpg);"></div>
+	</div>
+<!--BEEF / VEAL ITEMS-->
+	<br>
+	<h2 id="beef"><br>BEEF / VEAL</h2>
+	<div class="note">
+		Serving Sizes
+		<ul class="servings">
+		<li>Medium Tray feeds about 8 people</li>
+		<li>Large Tray feeds about 20 people</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Haleem
+		<ul class="prices">
+			<li class="description">$5.50 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$5 per person &#8729; Cauldron</li>
+			<li class="description">$40 &#8729; Medium Tray</li>
+			<li class="description">$100 &#8729; Large Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Beef Nihari
+		<ul class="prices">
+			<li class="description">$7 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$5.50 per person &#8729; Cauldron</li>
+			<li class="description">$50 &#8729; Medium Tray</li>
+			<li class="description">$140 &#8729; Large Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12 md-clear">Veal Biryani
+		<ul class="prices">
+			<li class="description">$5 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$4.50 per person &#8729; Cauldron</li>
+			<li class="description">$35 &#8729; Medium Tray</li>
+			<li class="description">$85 &#8729; Large Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12 lg-clear">Veal Korma
+		<ul class="prices">
+			<li class="description">$4.50 per person &#8729; Cauldron</li>
+			<li class="description">$40 &#8729; Medium Tray</li>
+			<li class="description">$100 &#8729; Large Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12 md-clear">Veal Karahi
+		<ul class="prices">
+			<li class="description">$4.50 per person &#8729; Cauldron</li>
+			<li class="description">$45 &#8729; Medium Tray</li>
+			<li class="description">$120 &#8729; Large Tray</li>
+		</ul>
+	</div>
+<!--CHICKEN ITEMS-->
+	<br>
+	<h2 id="chicken"><br>CHICKEN</h2>
+	<div class="note">
+		Serving Sizes
+		<ul class="servings">
+			<li>Medium Tray feeds about 8 people</li>
+			<li>Large Tray feeds about 20 people</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Chicken Biryani
+		<ul class="prices">
+			<li class="description">$5 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$4.50 per person &#8729; Cauldron</li>
+			<li class="description">$30 &#8729; Medium Tray</li>
+			<li class="description">$80 &#8729; Large Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Chicken Korma
+		<ul class="prices">
+			<li class="description">$4.50 per person &#8729; Cauldron</li>
+			<li class="description">$35 &#8729; Medium Tray</li>
+			<li class="description">$90 &#8729; Large Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12 md-clear">Chicken Karahi
+		<ul class="prices">
+			<li class="description">$4.50 per person &#8729; Cauldron</li>
+			<li class="description">$40 &#8729; Medium Tray</li>
+			<li class="description">$110 &#8729; Large Tray</li>
+		</ul>
+	</div>
+<!--GARNISHES-->
+	<br>
+	<h2 id="garnishes"><br>GARNISHES</h2>
+	<div class="note">
+		<ul class="prices">
+			Given upon request
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Ginger Matchsticks
+		<ul class="prices">
+		<li class="description">Free with order</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Lemon Wedges
+		<ul class="prices">
+		<li class="description">Free with order</li>
+		</ul>
+	</div>
+<!--DESSERTS-->
+	<br>
+	<h2 id="desserts"><br>DESSERTS</h2>
+	<div class="note">
+		Serving Sizes
+		<ul class="servings">
+			<li>Medium Tray feeds about 15 people</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Kheer
+		<ul class="prices">
+			<li class="description">$35 &#8729; Medium Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12">Zarda
+		<ul class="prices">
+			<li class="description">$35 &#8729; Medium Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12 md-clear">Lab-e-Shireen
+		<ul class="prices">
+			<li class="description">$35 &#8729; Medium Tray</li>
+		</ul>
+	</div>
+	<div class="food-item col-lg-4 col-md-6 col-sm-12 lg-clear">Mango Delight
+		<ul class="prices">
+			<li class="description">$35 &#8729; Medium Tray</li>
+		</ul>
+	</div>
+<!--END NOTES AND FOOTER-->
+	<br><br><br><br>
+	<div class="note"><sup>&#10013;</sup> Individual containers are available for orders of at least 50</div>
+
+	<br>
+	<div id="footer">
+		<a href="#top" class="button">Top</a>
 	</div>
 </body>
 </html>

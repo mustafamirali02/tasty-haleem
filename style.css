@@ -1,0 +1,258 @@
+//RESTAURANT
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: 20px 0 0 0;
+	background-color: bisque;
+	box-sizing: border-box;
+}
+
+br {
+	clear: both;
+}
+
+h1#top {
+	text-align: center;
+	padding-top: 20px;
+	color: fireBrick;
+	margin-bottom: 0;
+	font-family: "Vast Shadow", serif;
+	font-size: 60px;
+	font-weight: 400;
+	font-variant: small-caps;
+	text-shadow: 1px 1px 1px white;
+}
+
+
+h2 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	clear: both;
+	border-style: none none dotted none;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
+h3#tagline {
+	text-align: center;
+	color: fireBrick;
+	font-family: "Hammersmith One", serif;
+}
+
+.food-pic {
+	box-sizing: border-box;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+.food-pic-container {
+	box-sizing: border-box;
+	height: 300px;
+}
+
+
+p {
+	font-family: Calibri, sans-serif;
+	font-size: 20px;
+}
+
+
+.description {
+	font-size: 16px;
+}
+
+li.description {
+	list-style: none;
+	color: rgb(102,102,102);
+	font-weight: 800;
+	font-variant: none;
+}
+
+.caption {
+	font-size: 12px;
+	color: rgb(102,102,102);
+}
+
+
+ul.prices, ul.servings {
+	list-style-position: inside;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+
+span.seperator {
+	display: inline-block;
+	width: 100px;
+}
+
+	
+a.button {
+	display: inline-block;
+	width: 120px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	background-color: dimGray;
+	border-style: outset;
+	border-color: gray;
+	border-radius: 20px;
+	text-align: center;
+	font-family: Calibri, sans-serif;
+	font-weight: 600;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+a.button:active {
+	border-style: inset;
+}
+
+
+#navigation {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	padding: 10px;
+	background-color: slateGray;
+	border: 5px double black;
+}
+
+
+#footer {
+	box-sizing: content-box;
+	padding: 10px;
+	margin-top: 50px;
+	border-top: 5px double black;
+	clear: both;
+	background-color: peru;
+}
+
+
+div.note {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 20px;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	font-weight: 400;
+}
+
+
+div.food-item {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 20px;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-6, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: calc(100% / 12);
+  }
+  .col-lg-2 {
+    width: calc(100% / 6);
+  }
+  .col-lg-3 {
+    width: calc(100% / 4);
+  }
+  .col-lg-4 {
+    width: calc(100% / 3);
+  }
+  .col-lg-6 {
+    width: calc(100% / 2);
+  }
+  .col-lg-12 {
+    width: calc(100%);
+  }
+  .lg-clear {
+    clear: both;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 600px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: calc(100% / 12);
+  }
+  .col-md-2 {
+    width: calc(100% / 6);
+  }
+  .col-md-3 {
+    width: calc(100% / 4);
+  }
+  .col-md-4 {
+    width: calc(100% / 3);
+  }
+  .col-md-6 {
+    width: calc(100% / 2);
+  }
+  .col-md-12 {
+    width: calc(100%);
+  }
+  .md-clear {
+    clear: both;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 599px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-6, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {
+    width: calc(100% / 12);
+  }
+  .col-sm-2 {
+    width: calc(100% / 6);
+  }
+  .col-sm-3 {
+    width: calc(100% / 4);
+  }
+  .col-sm-4 {
+    width: calc(100% / 3);
+  }
+  .col-sm-6 {
+    width: calc(100% / 2);
+  }
+  .col-sm-12 {
+    width: calc(100%);
+  }
+  .food-pic-container {
+    display: none;
+  }
+  .sm-clear {
+    clear: both;
+  }
+  a.button {
+    box-sizing: border-box;
+    width: 20%;
+    font-size: 90%;
+  }
+  div#navigation {
+    text-align: center;
+  }
+  #top {
+    font-size: 48px !important;
+  }
+}
