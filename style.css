@@ -8,7 +8,7 @@
 
 body {
 	font-family: Verdana, sans-serif;
-	margin: 20px 0 0 0;
+	margin: 0 0 0 0;
 	background-color: bisque;
 	box-sizing: border-box;
 }
@@ -17,16 +17,25 @@ br {
 	clear: both;
 }
 
-h1#top {
+div#top {
+	background-image: url(images/haleem.jpg);
+	width: 100%;
+	height: 1062px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+h1 {
 	text-align: center;
-	padding-top: 20px;
-	color: fireBrick;
-	margin-bottom: 0;
+	padding-top: 300px;
+	color: ivory;
+	margin: 0 0 0 0;
 	font-family: "Vast Shadow", serif;
-	font-size: 60px;
+	font-size: 100px;
 	font-weight: 400;
 	font-variant: small-caps;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 5px -2px 5px black;
 }
 
 
@@ -38,13 +47,16 @@ h2 {
 	border-style: none none dotted none;
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-bottom: 10px;
 }
 
 
-h3#tagline {
+h3 {
 	text-align: center;
-	color: fireBrick;
+	color: ivory;
 	font-family: "Hammersmith One", serif;
+	text-shadow: 5px -2px 5px black;
+	font-size: 36px;
 }
 
 .food-pic {
@@ -71,16 +83,20 @@ p {
 	font-size: 16px;
 }
 
+
 li.description {
-	list-style: none;
 	color: rgb(102,102,102);
 	font-weight: 800;
 	font-variant: none;
 }
 
 .caption {
-	font-size: 12px;
-	color: rgb(102,102,102);
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	top: -8px;
+	font-weight: 600;
+	padding: 2px;
 }
 
 
@@ -125,8 +141,11 @@ a.button:active {
 	position: sticky;
 	top: 0px;
 	padding: 10px;
-	background-color: slateGray;
-	border: 5px double black;
+	background-color: #737c89;
+	border: 0;
+	border-top: 5px double black;
+	border-bottom: 5px double black;
+	z-index: 1;
 }
 
 
@@ -147,6 +166,23 @@ div.note {
 	padding: 10px 50px;
 	font-weight: 400;
 }
+
+span.sizes {
+	text-decoration-line: underline;
+}
+
+
+div#minimum {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 20px;
+	color: ivory;
+	text-shadow: 5px -2px 5px black;
+}
+
+
 
 
 div.food-item {
@@ -188,7 +224,7 @@ div.food-item {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 600px) and (max-width: 1199px) {
+@media (min-width: 800px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-12 {
     float: left;
   }
@@ -213,10 +249,16 @@ div.food-item {
   .md-clear {
     clear: both;
   }
+  h1 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 20px;
+  }
 }
 
 /********** Small devices only **********/
-@media (max-width: 599px) {
+@media (max-width: 799px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-6, .col-sm-12 {
     float: left;
   }
@@ -238,21 +280,24 @@ div.food-item {
   .col-sm-12 {
     width: calc(100%);
   }
-  .food-pic-container {
-    display: none;
-  }
   .sm-clear {
     clear: both;
   }
   a.button {
     box-sizing: border-box;
-    width: 20%;
-    font-size: 90%;
+    width: 23%;
+    font-size: 12px;
   }
   div#navigation {
     text-align: center;
   }
-  #top {
-    font-size: 48px !important;
+  h1 {
+    font-size: 48px;
+  }
+  div#minimum {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
   }
 }

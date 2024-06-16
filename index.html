@@ -12,9 +12,13 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1 id="top">Al-Mir Catering</h1>
-	<h3 id="tagline">Serving our famous Haleem and Pakistani Cuisine</h3>
-
+	<div id="top">
+		<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)); height: 100%;">
+			<div id="minimum">Minimum order size is 50 people</div>
+			<h1>Al-Mir Catering</h1>
+			<h3 id="tagline">Serving our famous Haleem and Pakistani Cuisine</h3>
+		</div>
+	</div>
 	<div id="navigation">
 		<a href="#beef" class="button">Beef/Veal</a>
 		<a href="#chicken" class="button">Chicken</a>
@@ -22,21 +26,27 @@
 		<a href="#desserts" class="button">Desserts</a>
 	</div>
 <!--IMAGES-->
-	<br>
-	<div class="food-pic-container col-lg-4 col-md-4 col-sm-4" style="background-color: brown; border: brown solid 10px;">
-		<div class="food-pic" style="background-image: url(images/haleem.jpg);"></div>
+	<div class="food-pic-container col-lg-4 col-md-4 col-sm-12" style="background-color: brown; border: brown solid 10px;">
+		<div class="food-pic" style="background-image: url(images/haleem.jpg); position: relative;">
+			<div class="caption" style="background: brown;">Haleem</div>
+		</div>
+		
 	</div>
-	<div class="food-pic-container col-lg-4 col-md-4 col-sm-4" style="background-color: olive; border: olive solid 10px;">
-		<div class="food-pic" style="background-image: url(images/biryani.png);"></div>
+	<div class="food-pic-container col-lg-4 col-md-4 col-sm-12" style="background-color: olive; border: olive solid 10px;">
+		<div class="food-pic" style="background-image: url(images/biryani.png); position: relative;">
+			<div class="caption" style="background: olive;">Chicken Biryani</div>
+		</div>
 	</div>
-	<div class="food-pic-container col-lg-4 col-md-4 col-sm-4" style="background-color: cadetblue; border: cadetblue solid 10px;">
-		<div class="food-pic" style="background-image: url(images/mango-delight.jpg);"></div>
+	<div class="food-pic-container col-lg-4 col-md-4 col-sm-12" style="background-color: cadetblue; border: cadetblue solid 10px;">
+		<div class="food-pic" style="background-image: url(images/mango-delight.jpg); position: relative;">
+			<div class="caption" style="background: cadetblue;">Mango Delight</div>
+		</div>
 	</div>
 <!--BEEF / VEAL ITEMS-->
 	<br>
 	<h2 id="beef"><br>BEEF / VEAL</h2>
 	<div class="note">
-		Serving Sizes
+		<span class="sizes">Serving Sizes</span>
 		<ul class="servings">
 		<li>Medium Tray feeds about 8 people</li>
 		<li>Large Tray feeds about 20 people</li>
@@ -44,7 +54,7 @@
 	</div>
 	<div class="food-item col-lg-4 col-md-6 col-sm-12">Haleem
 		<ul class="prices">
-			<li class="description">$5.50 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$5.50 per person &#8729; Individual Container</li>
 			<li class="description">$5 per person &#8729; Cauldron</li>
 			<li class="description">$40 &#8729; Medium Tray</li>
 			<li class="description">$100 &#8729; Large Tray</li>
@@ -52,7 +62,7 @@
 	</div>
 	<div class="food-item col-lg-4 col-md-6 col-sm-12">Beef Nihari
 		<ul class="prices">
-			<li class="description">$7 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$7 per person &#8729; Individual Container</li>
 			<li class="description">$5.50 per person &#8729; Cauldron</li>
 			<li class="description">$50 &#8729; Medium Tray</li>
 			<li class="description">$140 &#8729; Large Tray</li>
@@ -60,7 +70,7 @@
 	</div>
 	<div class="food-item col-lg-4 col-md-6 col-sm-12 md-clear">Veal Biryani
 		<ul class="prices">
-			<li class="description">$5 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$5 per person &#8729; Individual Container</li>
 			<li class="description">$4.50 per person &#8729; Cauldron</li>
 			<li class="description">$35 &#8729; Medium Tray</li>
 			<li class="description">$85 &#8729; Large Tray</li>
@@ -84,7 +94,7 @@
 	<br>
 	<h2 id="chicken"><br>CHICKEN</h2>
 	<div class="note">
-		Serving Sizes
+		<span class="sizes">Serving Sizes</span>
 		<ul class="servings">
 			<li>Medium Tray feeds about 8 people</li>
 			<li>Large Tray feeds about 20 people</li>
@@ -92,7 +102,7 @@
 	</div>
 	<div class="food-item col-lg-4 col-md-6 col-sm-12">Chicken Biryani
 		<ul class="prices">
-			<li class="description">$5 per person &#8729; Individual Container<sup>&#10013;</sup></li>
+			<li class="description">$5 per person &#8729; Individual Container</li>
 			<li class="description">$4.50 per person &#8729; Cauldron</li>
 			<li class="description">$30 &#8729; Medium Tray</li>
 			<li class="description">$80 &#8729; Large Tray</li>
@@ -116,9 +126,8 @@
 	<br>
 	<h2 id="garnishes"><br>GARNISHES</h2>
 	<div class="note">
-		<ul class="prices">
-			Given upon request
-		</ul>
+		<span class="sizes">Given upon request</span>
+
 	</div>
 	<div class="food-item col-lg-4 col-md-6 col-sm-12">Ginger Matchsticks
 		<ul class="prices">
@@ -134,7 +143,7 @@
 	<br>
 	<h2 id="desserts"><br>DESSERTS</h2>
 	<div class="note">
-		Serving Sizes
+		<span class="sizes">Serving Sizes</span>
 		<ul class="servings">
 			<li>Medium Tray feeds about 15 people</li>
 		</ul>
@@ -161,7 +170,7 @@
 	</div>
 <!--END NOTES AND FOOTER-->
 	<br><br><br><br>
-	<div class="note"><sup>&#10013;</sup> Individual containers are available for orders of at least 50</div>
+	<div class="note">Minimum order size is 50 people</div>
 
 	<br>
 	<div id="footer">
