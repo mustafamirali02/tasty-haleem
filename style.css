@@ -79,6 +79,12 @@ p {
 }
 
 
+p#contact-top {
+	text-align: center;
+	color: ivory;
+	text-shadow: 5px -2px 5px black;
+}
+
 .description {
 	font-size: 16px;
 }
@@ -299,5 +305,8 @@ div.food-item {
   }
   h3 {
     font-size: 20px;
+  }
+  p#contact-top {
+	  font-size: 16px;
   }
 }
