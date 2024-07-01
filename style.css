@@ -1,5 +1,15 @@
-//RESTAURANT
+/*
+HALEEM
+https://www.color-hex.com/color-palette/5435
+*/
 
+:root {
+	--red: rgb(133,43,35);
+	--blue: rgb(37,136,178);
+	--beige: rgb(216,205,187);
+	--yellow: rgb(206,137,16);
+	--gray: rgb(170,170,170);
+}
 
 * {
 	box-sizing: border-box;
@@ -9,7 +19,7 @@
 body {
 	font-family: Verdana, sans-serif;
 	margin: 0 0 0 0;
-	background-color: bisque;
+	background-color: var(--beige);
 	box-sizing: border-box;
 }
 
@@ -91,7 +101,7 @@ p#contact-top {
 
 
 li.description {
-	color: rgb(102,102,102);
+	color: dimGray
 	font-weight: 800;
 	font-variant: none;
 }
@@ -161,7 +171,13 @@ a.button:active {
 	margin-top: 50px;
 	border-top: 5px double black;
 	clear: both;
-	background-color: peru;
+	background-color: var(--yellow);
+}
+
+
+#contact-bottom {
+	color: white;
+	text-shadow: 2px -2px 5px black;
 }
 
 
